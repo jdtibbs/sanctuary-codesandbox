@@ -5,6 +5,6 @@ test('sanctuary add5 = 8', () => {
   expect(add5(3)).toBe(8);
 });
 
-test('x', ()=>{
+test('head = 3', ()=>{
   expect(fromMaybe(0)(head([3,4,5]))).toBe(3)
 }
