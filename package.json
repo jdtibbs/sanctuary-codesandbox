@@ -1,0 +1,18 @@
+{
+  "name": "sanctuary-codesandbox",
+  "version": "1.0.0",
+  "description": "a place to play with sanctuary.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "jest": "23.6.0",
+    "sanctuary": "0.15.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
