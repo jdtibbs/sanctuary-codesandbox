@@ -4,7 +4,7 @@ import {
   fromMaybe,
   get,
   gets,
-  maybe,
+  id,
   prop,
   props,
   pipe
@@ -38,6 +38,7 @@ test('get', () => {
   const o = { id: 1, name: 'sam' };
   expect(fromMaybe(0)(get(equals(1))('id')(o))).toBe(1);
   expect(fromMaybe(0)(get(equals(2))('id')(o))).toBe(0);
+  expect(fromMaybe('')(get(equals('sam'))('name')(o))).toBe('sam');
 });
 
 test('gets', () => {
